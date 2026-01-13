@@ -1,0 +1,23 @@
+h1 {
+    border: 2px solid olive;
+    background-color: blanchedalmond;
+}
+.main-title {
+    color: olive;
+}
+.button {
+    background-color: olive;
+    color: white;
+    border-radius: 2px;
+    border: 1px solid olive;
+}
+.button[disabled] {
+    background-color: blanchedalmond;
+    color: black;
+}
+.button:hover {
+    background-color: beige;
+    color: olive;
+    border: 1px solid olive;
+    cursor: pointer;
+}

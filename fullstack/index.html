@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+        <a href="./"><img src="./images/logo.svg" alt="logo" /></a>
         <ul>
-          <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#format-section">Формати</a></li>
+          <li><a href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <main>
       <!---->
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="main-title">Сучасна пекарня</h1>
       </section>
-      <section>
+      <section id="traditions-section">
         <ul>
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
@@ -35,7 +36,7 @@
         <p>5 хв - і замовлення <span>готове</span></p>
         <img src="./images/baker-man.jpg" alt="Фото пекаря з батонами" />
       </section>
-      <section>
+      <section id="chefs-section">
         <h2>Наші найкращі шеф-кухарі</h2>
         <ul>
           <li>
@@ -56,7 +57,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="format-section">
         <h2>Формати</h2>
         <ul>
           <li>
@@ -76,18 +77,26 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="contacts-section">
         <h2>Приєднуйтеся до мережі пекарні</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6987.4936782064615!2d24.87586854787242!3d48.404346223020745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sua!4v1768285749759!5m2!1suk!2sua"
+          width="600"
+          height="600"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
       <nav>
         <a href="#"><!--Logo--></a>
         <ul>
-          <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#format-section">Формати</a></li>
+          <li><a href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <address>
@@ -106,7 +115,7 @@
           <li><!--Instagram--></li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>© 2026 Дані захищені</p>
+        <p>&copy; 2026 Дані захищені</p>
       </address>
     </footer>
   </body>
