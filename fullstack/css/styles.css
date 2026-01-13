@@ -8,7 +8,7 @@ h1 {
 .button {
     background-color: olive;
     color: white;
-    border-radius: 2px;
+    border-radius: 4px;
     border: 1px solid olive;
 }
 .button[disabled] {
@@ -16,8 +16,11 @@ h1 {
     color: black;
 }
 .button:hover {
-    background-color: beige;
+    background-color: transparent;
     color: olive;
     border: 1px solid olive;
     cursor: pointer;
+}
+.button:focus {
+    background-color: darkolivegreen;
 }
