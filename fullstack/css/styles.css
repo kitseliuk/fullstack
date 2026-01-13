@@ -21,6 +21,6 @@ h1 {
     border: 1px solid olive;
     cursor: pointer;
 }
-.button:focus {
+.button:active {
     background-color: darkolivegreen;
 }
