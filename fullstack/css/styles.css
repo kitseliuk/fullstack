@@ -1,26 +1,62 @@
+:root {
+    --color-brand: olive;
+    --color-light:aliceblue;
+    --color-brand-dark:darkolivegreen;
+    --primary-dark: black;
+    --primary-light: white;
+}
+/*Base*/
+body {
+    color: var(--primary-dark);
+}
 h1 {
-    border: 2px solid olive;
-    background-color: blanchedalmond;
+    border: 2px solid var(--color-brand);
+    background-color: var(--primary-light);
 }
-.main-title {
-    color: olive;
+ul {
+    list-style: none;
 }
+p .accent{
+    color: var(--color-brand);
+}
+/*Hero section*/
+.hero-title {
+    color: var(--primary-light);
+}
+.hero-title .accent {
+    color: var(--color-brand);
+}
+/*Button section*/
 .button {
-    background-color: olive;
-    color: white;
+    background-color: var(--color-brand);
+    color: var(--primary-light);
     border-radius: 4px;
-    border: 1px solid olive;
-}
-.button[disabled] {
-    background-color: blanchedalmond;
-    color: black;
+    border: 1px solid var(--color-brand);
 }
 .button:hover {
-    background-color: transparent;
-    color: olive;
-    border: 1px solid olive;
+    background-color: var(--primary-light);
+    color: var(--color-brand);
+    border: 1px solid var(--color-brand);
     cursor: pointer;
 }
 .button:active {
-    background-color: darkolivegreen;
+    background-color: var(--color-brand-dark);
+}
+/*Link section*/
+.link {
+    color: var(--color-light);
+}
+.link:hover {
+    color: var(--color-brand-dark);
+}
+/*List*/
+.advantages-list {
+    background-color: var(--color-brand);
+    color: var(--primary-light);
+}
+.section-title {
+    color: var(--primary-dark);
+}
+.section-title .accent {
+    color: var(--color-brand-dark);
 }
