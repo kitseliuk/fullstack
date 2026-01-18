@@ -23,6 +23,8 @@ p .accent{
 /*Hero section*/
 .hero-title {
     color: var(--primary-light);
+    text-align: center;
+    text-shadow: hoff voff blur #000;
 }
 .hero-title .accent {
     color: var(--color-brand);
@@ -61,4 +63,11 @@ p .accent{
 }
 .section-title .accent {
     color: var(--color-brand-dark);
+}
+/*Tradition text*/
+.traditions-text .brand {
+    color: var(--color-brand);
+}
+.traditions-text .uppercase {
+    text-transform: uppercase;
 }
