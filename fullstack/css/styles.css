@@ -51,10 +51,14 @@
 }
 
 /*Base*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: var(--primary-dark);
     font-family: 'Poppins',sans-serif;
-    font-style: 18px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -72,7 +76,7 @@ ul {
     list-style: none;
 }
 
-p .accent{
+p .accent {
     color: var(--color-brand);
 }
 
@@ -127,7 +131,7 @@ p .accent{
 }
 
 .advantages-item {
-    font-style: 20px;
+    font-size: 20px;
     font-weight: 300;
 }
 .section-title {
