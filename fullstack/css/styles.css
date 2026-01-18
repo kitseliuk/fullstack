@@ -8,6 +8,7 @@
 /*Base*/
 body {
     color: var(--primary-dark);
+    font-family: 'Poppins',sans-serif;
 }
 h1 {
     border: 2px solid var(--color-brand);
@@ -45,6 +46,7 @@ p .accent{
 /*Link section*/
 .link {
     color: var(--color-light);
+    text-decoration: none;
 }
 .link:hover {
     color: var(--color-brand-dark);
