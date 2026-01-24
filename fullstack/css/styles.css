@@ -53,7 +53,9 @@
 }
 
 /*Base*/
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -87,6 +89,10 @@ ul {
 
 p .accent {
     color: var(--color-brand-normal);
+}
+
+a {
+    display: inline-block;
 }
 
 .visually-hidden {
@@ -259,9 +265,22 @@ p .accent {
     margin-bottom: 16px;
 }
 
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
 .chef-photo {
     border-radius: 2px 2px 2px 200px;
     box-shadow: -16px 16px 0 0 var(--primary-light),-16px 16px 0 2px var(--color-secondary-dark);
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0;
 }
 
 .chefs-title {
@@ -275,6 +294,16 @@ p .accent {
     width: 352px;
     border: 2px solid var(--color-brand-light);
     content: '';
+}
+
+.chefs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
 }
 
 /* Formats section */
@@ -311,12 +340,80 @@ p .accent {
     flex-basis: calc((100%-40px)/3);
 }
 
+.formats-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Carousel */
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: 1px solid var(--primary-dark);
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    fill: var(--primary-dark);
+    flex-shrink: 0;
+}
+
+.carousel-button:hover {
+    background-color: var(--primary-dark);
+    fill: var(--primary-light);
+}
+
 /* Contact section */
+.contact-section {
+    padding-bottom: 96px;
+}
+
 .contact-title {
     margin-bottom: 16px;
 }
 
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+
 /* Footer */
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+}
+
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+
 .adress-link {
     color: var(--color-light);
     text-decoration: none;
@@ -337,10 +434,19 @@ p .accent {
     font-weight: 400;
 }
 
+.adress-social {
+    fill: var(--primary-light);
+}
+
+.adress-social:hover {
+    fill: var(--color-brand-normal);
+}
+
 .footer {
     background-image: url(../images/footer.jpg);
     background-color: var(--primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 32px 0;
 }
