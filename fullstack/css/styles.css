@@ -50,6 +50,8 @@
     --primary-light: #faf4ea;
     --color-brand-light: #cfcfbc;
     --color-secondary-dark: #a18268;
+    --color-social-facebook: blue;
+    --color-social-instagram: #ff0080;
 }
 
 /*Base*/
@@ -117,7 +119,7 @@ a {
 
 /* Header */
 .header {
-    background-color: lightgray; /* remove */
+    background-color: lightgray; /*remove*/
 }
 
 .header-container {
@@ -143,6 +145,7 @@ a {
 /*Hero section*/
 .hero-title {
     color: var(--primary-light);
+    background: none;
     margin-bottom: 0;
     text-align: center;
     font-size: 128px;
@@ -243,6 +246,11 @@ a {
 
 .traditions-title {
     margin-bottom: 42px;
+}
+
+.traditions-baker-photo {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
 }
 
 .traditions-text .brand {
@@ -401,7 +409,7 @@ a {
 /* Footer */
 .footer {
     position: relative;
-    background-image: url(../images/footer.jpg);
+    background-image: url(../images/footer.png);
     background-color: var(--primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
@@ -420,13 +428,17 @@ a {
 }
 
 .footer::before {
-    left: 0;
+    left: 48px;
+    bottom: 48px;
     background-image: url(../images/decor-bread-smal.png);
+    transform: scale(2);
 }
 
 .footer::after {
-    right: 0;
+    right: 48px;
+    bottom: 48px;
     background-image: url(../images/decor-bread-large.png);
+    transform: scale(2);
 }
 
 .footer-container {
@@ -475,8 +487,12 @@ a {
     font-weight: 400;
 }
 
-.adress-social {
-    fill: var(--primary-light);
+.facebook {
+    fill: var(--color-social-facebook);
+}
+
+.instagram {
+    fill: var(--color-social-instagram);
 }
 
 .adress-social:hover {
