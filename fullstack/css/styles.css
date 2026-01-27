@@ -363,6 +363,7 @@ a {
 
 .format-card:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .formats-list {
@@ -542,6 +543,7 @@ a {
 
 .modal {
     position: relative;
+    padding: 128px;
     width: 100%;
     height: 100%;
     max-width: 880px;
