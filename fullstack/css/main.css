@@ -340,29 +340,48 @@ a {
 }
 
 .format-title {
+  z-index: 0;
   font-size: 24px;
   font-weight: 600;
+  color: var(--color-light);
 }
 
 .format-text {
+  z-index: 0;
   font-size: 14px;
   font-weight: 300;
+  color: var(--color-light);
 }
 
 .format-card {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border: 1px solid lightgray;
   /* remove*/
   height: 444px;
   border-radius: 16px;
   padding: 24px;
-  background-image: linear-gradient(180deg, var(--color-brand-dark) 0%, var(--primary-light) 10%, var(--primary-light) 90%, var(--color-brand-dark) 100%);
-  box-shadow: 0px -10px 4px -5px var(--color-brand-dark);
+  background-image: linear-gradient(180deg, var(--primary-light) 55.21%, var(--primary-light) 72.92%, var(--primary-dark) 100%);
   transition: transform 0.3s;
 }
 
 .format-card:hover {
+  z-index: 0;
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.format-image {
+  position: absolute;
+  border-radius: 16px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .formats-list {
@@ -519,7 +538,7 @@ a {
   fill: var(--color-brand-normal);
 }
 
-/* Model */
+/* Modal */
 .backdrop {
   position: fixed;
   padding: 20px 0;

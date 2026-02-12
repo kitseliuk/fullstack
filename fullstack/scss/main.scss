@@ -160,16 +160,25 @@
 }
 
 .format-title {
+  z-index: 0;
   font-size: 24px;
   font-weight: 600;
+  color: var(--color-light);
 }
 
 .format-text {
+  z-index: 0;
   font-size: 14px;
   font-weight: 300;
+  color: var(--color-light);
 }
 
 .format-card {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border: 1px solid lightgray;
   /* remove*/
   height: 444px;
@@ -177,18 +186,27 @@
   padding: 24px;
   background-image: linear-gradient(
     180deg,
-    var(--color-brand-dark) 0%,
-    var(--primary-light) 10%,
-    var(--primary-light) 90%,
-    var(--color-brand-dark) 100%
+    var(--primary-light) 55.21%,
+    var(--primary-light) 72.92%,
+    var(--primary-dark) 100%
   );
-  box-shadow: 0px -10px 4px -5px var(--color-brand-dark);
   transition: transform 0.3s;
 }
 
 .format-card:hover {
+  z-index: 0;
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.format-image {
+  position: absolute;
+  border-radius: 16px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .formats-list {
@@ -345,43 +363,6 @@
   fill: var(--color-brand-normal);
 }
 
-/* Model */
-.backdrop {
-  position: fixed;
-  padding: 20px 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s, visibility 0.3s;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.modal {
-  position: relative;
-  padding: 128px;
-  width: 100%;
-  height: 100%;
-  max-width: 880px;
-  max-height: 880px;
-  background-color: var(--primary-light);
-  border-radius: 32px;
-  overflow-y: auto;
-}
-
-.modal-btn-close {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
+@import "./componets/modal";
 
 @import "./componets/forms";
