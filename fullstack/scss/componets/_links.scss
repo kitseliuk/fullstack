@@ -1,0 +1,47 @@
+/*Link section*/
+.link {
+  color: var(--color-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--color-brand-dark);
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.adress-link {
+  color: var(--color-light);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.adress-link:hover {
+  color: var(--color-brand-normal);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.adress-copyright {
+  color: var(--color-light);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.facebook {
+  fill: var(--color-social-facebook);
+}
+
+.instagram {
+  fill: var(--color-social-instagram);
+}
+
+.adress-social:hover {
+  fill: var(--color-brand-normal);
+}

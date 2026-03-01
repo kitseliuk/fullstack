@@ -113,20 +113,6 @@ a {
   padding: 48px 0;
 }
 
-.section-title {
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1.3;
-}
-
-.section-title.centered {
-  text-align: center;
-}
-
-.section-title .accent {
-  color: var(--color-brand-dark);
-}
-
 .container {
   width: 100%;
   max-width: 1288px;
@@ -220,43 +206,6 @@ a {
   color: var(--color-brand-dark);
 }
 
-.address-list,
-.address-info {
-  flex-grow: 1;
-}
-
-.adress-link {
-  color: var(--color-light);
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.adress-link:hover {
-  color: var(--color-brand-normal);
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.adress-copyright {
-  color: var(--color-light);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.facebook {
-  fill: var(--color-social-facebook);
-}
-
-.instagram {
-  fill: var(--color-social-instagram);
-}
-
-.adress-social:hover {
-  fill: var(--color-brand-normal);
-}
-
 /* Advantages secton */
 .advantages-section {
   background-color: var(--color-brand-normal);
@@ -273,10 +222,6 @@ a {
   font-size: 20px;
   font-weight: 300;
   color: var(--primary-light);
-}
-
-.section {
-  padding: 48px 0;
 }
 
 .section-title {
@@ -337,6 +282,24 @@ a {
   margin-bottom: 16px;
 }
 
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-photo {
+  border-radius: 2px 2px 2px 200px;
+  box-shadow: -16px 16px 0 0 var(--primary-light), -16px 16px 0 2px var(--color-secondary-dark);
+}
+
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0;
+}
+
 .chefs-title {
   position: relative;
   margin: 0 auto 80px;
@@ -369,24 +332,6 @@ a {
 
 .chefs-item {
   flex-basis: calc((100% - 30px) / 2);
-}
-
-.chef-card {
-  display: flex;
-  gap: 30px;
-}
-
-.chef-photo {
-  border-radius: 2px 2px 2px 200px;
-  box-shadow: -16px 16px 0 0 var(--primary-light), -16px 16px 0 2px var(--color-secondary-dark);
-}
-
-.chef-text p {
-  margin-bottom: 24px;
-}
-
-.chef-text p:last-child {
-  margin-bottom: 0;
 }
 
 /* Formats section */
@@ -554,6 +499,43 @@ a {
 .footer-address {
   display: flex;
   flex-basis: 50%;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.adress-link {
+  color: var(--color-light);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.adress-link:hover {
+  color: var(--color-brand-normal);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.adress-copyright {
+  color: var(--color-light);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.facebook {
+  fill: var(--color-social-facebook);
+}
+
+.instagram {
+  fill: var(--color-social-instagram);
+}
+
+.adress-social:hover {
+  fill: var(--color-brand-normal);
 }
 
 /* Modal */
