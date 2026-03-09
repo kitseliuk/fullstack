@@ -153,3 +153,15 @@
 // console.log(cofMan._water);
 // cofMan.waterAmount = -20;
 // console.log(cofMan._water);
+let timer = setInterval(counter, 1000);
+
+let iTimer = 0;
+
+function counter() {
+    iTimer++;
+    console.log(iTimer);
+    if (iTimer === 7) {
+        console.log("Кінець!");
+        clearInterval(timer);
+    }
+}
